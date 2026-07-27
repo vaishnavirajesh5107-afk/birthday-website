@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mine 💜</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Password Screen -->
+<div id="passwordScreen">
+
+    <h1>🔒 Enter Password</h1>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <br><br>
+
+    <button onclick="checkPassword()">
+        Unlock 💜
+    </button>
+
+</div>
+
+<!-- Main Content -->
+<div id="mainContent" style="display:none;">
+
+<!-- Intro Page -->
+<section id="introPage">
+
+    <h1>🎂 Happy 20th Birthday, Mine 💜</h1>
+
+    <p>
+        This isn't just a website...
+        It's every memory,
+        every smile,
+        every silent thank you
+        that words alone could never express. 🤍
+    </p>
+
+    <button onclick="startJourney()">
+        Begin the Journey ✨
+    </button>
+
+</section>
+
+<!-- Story Page -->
+<section id="storyPage" style="display:none;">
+
+    <h1>📖 Our Story Begins</h1>
+
+    <h2>01 July 2022</h2>
+
+    <p>
+        A random day for the world...
+        But the day my favorite chapter began. 💜
+    </p>
+
+    <button onclick="showGallery()">
+        Continue ❤️
+    </button>
+
+</section>
+
+<!-- Gallery Page -->
+<section id="galleryPage" style="display:none;">
+
+    <h1>📸 Our Beautiful Memories</h1>
+
+    <img id="galleryImage" src="photo/Photo 1.jpg" alt="Memory">
+
+    <p id="galleryCaption"></p>
+
+    <button onclick="nextPhoto()">
+        Next ➜
+    </button>
+
+</section>
+<!-- Letter Page -->
+<section id="letterPage" style="display:none;">
+
+    <h1>💌 A Letter For You</h1>
+
+    <p id="letterText">
+
+You're not just my best friend. 🫂🤍
+
+You're the person who turned ordinary days into my favorite memories. 📸✨
+
+You're my one and only favorite person, my safe place, and the universe I'll always choose. 🌍❤️
+
+Time may change everything, but you'll always be my favorite person—today, tomorrow, and forever. ♾️🤍
+
+Thank you for existing. 🌷
+
+Thank you for being my Bhavadharani. 🥹💖
+
+Happy 20th Birthday! 🎂🎉
+
+I hope today reminds you how deeply you're loved. ❤️‍🩹✨
+
+And one more thing...
+
+You'll always be my forever bestie. 👭🤍♾️
+
+— Love, Vaishnavi 💜
+
+    </p>
+
+    <button onclick="showVideo()">
+        Watch Your Surprise 🎥
+    </button>
+
+</section>
+
+<!-- Video Page -->
+<section id="videoPage" style="display:none;">
+
+    <h1>🎥 Your Birthday Surprise</h1>
+
+    <video id="birthdayVideo" controls>
+        <source src="video/birthday.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <button onclick="showFinalPage()">
+        Final Surprise 🎁
+    </button>
+
+</section>
+
+<!-- Final Page -->
+<section id="finalPage" style="display:none;">
+
+    <h1>🎉 Happy Birthday, Mine! 💜</h1>
+
+    <p>
+
+You made my life more beautiful just by being in it. 🥹🤍
+
+No matter where life takes us,
+you'll always have a special place in my heart. 💖
+
+Happy 20th Birthday, Bhavadharani! 🎂✨
+
+👭 Forever Best Friends ♾️💜
+
+    </p>
+
+    <h2>💌 With Love,<br>Vaishnavi</h2>
+    <p id="typingText"></p>
+    <button onclick="oneLastHug()">
+    🤍 One Last Hug
+</button>
+
+<div id="hugPopup" class="hugPopup">
+
+  <div class="hugCard">
+
+    <h2>🫂💜 One Last Hug...</h2>
+
+    <p>
+No matter what happens...
+
+No matter how busy life gets...
+
+No matter how many years pass...
+
+No matter who comes into my life,
+no one could ever replace you.
+
+You'll always be my forever bestie. 👭🤍♾️
+
+Thank you for every laugh,
+every memory,
+and every moment.
+
+Thank you for being the most beautiful part of my life. 🌷💜
+
+❤️ With Love,
+Vaishnavi
+    </p>
+
+    <button onclick="closeHug()">💜 Forever</button>
+
+  </div>
+
+</div>
+<p id="theEnd" style="display:none;">
+🌷<br>
+
+The End...
+
+But our friendship never ends. 👭♾️💜
+
+Happy Birthday, Mine. 🎂✨
+</p>
+
+</section>
+
+</div>
+
+<!-- Background Music -->
+<audio id="bgmusic" loop>
+    <source src="music/birthday.mp3.mpeg" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+
+</body>
+</html>
