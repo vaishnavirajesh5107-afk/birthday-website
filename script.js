@@ -218,4 +218,3 @@ function createFloatingText() {
 
 }
 
-setInterval(createFloatingText, 12000);
