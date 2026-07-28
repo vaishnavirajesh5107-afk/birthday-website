@@ -203,14 +203,12 @@ function typeText() {
 const floatingText = "You were never just my best friend... you became my second mother, my safe place, and my biggest comfort. Not everyone is lucky enough to have someone who cares this deeply, and I'm forever grateful to have you in my life. 🤍💜";
 
 function createFloatingText() {
-
-    const text = document.createElement("div");
-
-    text.innerHTML = floatingText;
-
-    text.className = "floatingWord";
+const text = document.createElement("div");
+ text.innerHTML = floatingText;
+ text.className = "floatingWord";
 
     document.body.appendChild(text);
+    setInterval(createFloatingText,12000);
 
     setTimeout(() => {
         text.remove();
