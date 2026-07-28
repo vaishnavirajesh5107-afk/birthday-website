@@ -116,6 +116,7 @@ function showFinalPage(){
     document.getElementById("finalPage").style.display = "block";
 
     launchFireworks();
+    createFloatingText();
 
     document.getElementById("typingText").innerHTML = "";
     i = 0;
