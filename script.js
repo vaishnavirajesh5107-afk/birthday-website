@@ -76,7 +76,7 @@ function nextPhoto() {
     if (currentPhoto <= 10) {
 
         document.getElementById("galleryImage").src =
-        "photo/Photo " + currentPhoto + ".jpg";
+        "photo " + currentPhoto + ".jpg";
 
         document.getElementById("galleryCaption").innerText = 
         captions[currentPhoto - 1];
