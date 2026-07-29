@@ -116,7 +116,6 @@ function showFinalPage(){
     document.getElementById("finalPage").style.display = "block";
 
     launchFireworks();
-    createFloatingText();
 
     document.getElementById("typingText").innerHTML = "";
     i = 0;
@@ -200,19 +199,22 @@ function typeText() {
     }
 
 }
-const floatingText = "You were never just my best friend... you became my second mother, my safe place, and my biggest comfort. Not everyone is lucky enough to have someone who cares this deeply, and I'm forever grateful to have you in my life. 🤍💜";
+const message = "You were never just my best friend... you became my second mother, my safe place, and my biggest comfort. Not everyone is lucky enough to have someone who cares this deeply, and I'm forever grateful to have you in my life. 🤍💜";
 
-function createFloatingText() {
-const text = document.createElement("div");
- text.innerHTML = floatingText;
- text.className = "floatingWord";
+let i = 0;
 
-    document.body.appendChild(text);
-    setInterval(createFloatingText,12000);
+function typeText() {
 
-    setTimeout(() => {
-        text.remove();
-    }, 10000);
+    i = 0;
+    document.getElementById("typingText").innerHTML = "";
 
+    function typing() {
+        if (i < message.length) {
+            document.getElementById("typingText").innerHTML += message.charAt(i);
+            i++;
+            setTimeout(typing, 50);
+        }
+    }
+
+    typing();
 }
-
