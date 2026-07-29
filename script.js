@@ -68,6 +68,10 @@ We took this photo when we went shopping together. A day full of fun and laughte
 This is the last photo, but not the least. This is your favorite photo, right? 💜✨`
 
 ];
+for (let i = 1; i <= 10; i++) {
+    const img = new Image();
+    img.src = "photo " + i + ".jpg";
+}
 
 function nextPhoto() {
 
